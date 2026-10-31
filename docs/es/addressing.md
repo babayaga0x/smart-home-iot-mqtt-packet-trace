@@ -4,7 +4,7 @@ El ruteo inter-VLAN se realiza con **router-on-a-stick** en R1 (`GigabitEthernet
 
 | VLAN | Nombre | Subred | Gateway (R1) | Direccionamiento | Función |
 |---|---|---|---|---|---|
-| 10 | ADMIN | 192.168.10.0/24 | 192.168.10.1 (Gi0/1.10) | DHCP (.1–.20 excluidas) | Equipos administrativos y estaciones de trabajo |
+| 10 | PCs | 192.168.10.0/24 | 192.168.10.1 (Gi0/1.10) | DHCP (.1–.20 excluidas) | Equipos administrativos y estaciones de trabajo |
 | 20 | WIFI | 192.168.20.0/24 | 192.168.20.1 (Gi0/1.20) | DHCP (.1–.20 excluidas) | Dispositivos cliente conectados mediante puntos de acceso inalámbricos |
 | 30 | IOT | 192.168.30.0/24 | 192.168.30.1 (Gi0/1.30) | DHCP (.1–.20 excluidas) | Dispositivos IoT y equipos de adquisición de datos |
 | 40 | – | 192.168.40.0/24 | 192.168.40.1 (Gi0/1.40) | Estático (sin pool DHCP) | Servicios de infraestructura, incluido el broker MQTT (192.168.40.10) |
