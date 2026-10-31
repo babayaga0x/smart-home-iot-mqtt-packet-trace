@@ -4,7 +4,7 @@ Inter-VLAN routing is done with **router-on-a-stick** on R1 (`GigabitEthernet0/1
 
 | VLAN | Name | Subnet | Gateway (R1) | Addressing | Purpose |
 |---|---|---|---|---|---|
-| 10 | ADMIN | 192.168.10.0/24 | 192.168.10.1 (Gi0/1.10) | DHCP (.1–.20 excluded) | Administrative equipment and workstations |
+| 10 | PCs | 192.168.10.0/24 | 192.168.10.1 (Gi0/1.10) | DHCP (.1–.20 excluded) | Administrative equipment and workstations |
 | 20 | WIFI | 192.168.20.0/24 | 192.168.20.1 (Gi0/1.20) | DHCP (.1–.20 excluded) | Client devices connected through wireless access points |
 | 30 | IOT | 192.168.30.0/24 | 192.168.30.1 (Gi0/1.30) | DHCP (.1–.20 excluded) | IoT devices and data-acquisition equipment |
 | 40 | MQTT | 192.168.40.0/24 | 192.168.40.1 (Gi0/1.40) | Static (no DHCP pool) | Infrastructure services, incl. the MQTT broker (192.168.40.10) |
